@@ -2,10 +2,10 @@ import { Button, Stack } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 //dynamic styling
-const DynamicStyledButton = props => {
+const DynamicStyledButton = (props) => {
     return (
         <Button sx={{color: props.color, bgcolor: props.color}} >
-            {props.label}
+            {props.children}
         </Button>
     );
 }
